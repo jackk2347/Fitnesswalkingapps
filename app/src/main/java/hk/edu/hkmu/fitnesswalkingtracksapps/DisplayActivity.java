@@ -88,8 +88,8 @@ public class DisplayActivity extends AppCompatActivity {
                         MapURL = data.getString("MapURL_tc").toString();
                         Latitude = data.getString("Latitude").toString();
                         Longitude = data.getString("Longitude").toString();
-                        Route = Route.replaceAll("<br>", "");
-                        Access = Access.replaceAll("<br>", "");
+                        Route = Route.replaceAll("<br>", "\n");
+                        Access = Access.replaceAll("<br>", "\n");
                         Latitude = Latitude.replaceAll(",", "");
                         Longitude = Longitude.replaceAll(",", "");
                         Data datas = new Data(title, distinct, Route, Access, MapURL, Latitude, Longitude);
@@ -102,8 +102,8 @@ public class DisplayActivity extends AppCompatActivity {
                         MapURL = data.getString("MapURL_sc").toString();
                         Latitude = data.getString("Latitude").toString();
                         Longitude = data.getString("Longitude").toString();
-                        Route = Route.replaceAll("<br>", "");
-                        Access = Access.replaceAll("<br>", "");
+                        Route = Route.replaceAll("<br>", "\n");
+                        Access = Access.replaceAll("<br>", "\n");
                         Latitude = Latitude.replaceAll(",", "");
                         Longitude = Longitude.replaceAll(",", "");
                         Data datas = new Data(title, distinct, Route, Access, MapURL, Latitude, Longitude);
@@ -116,8 +116,8 @@ public class DisplayActivity extends AppCompatActivity {
                         MapURL = data.getString("MapURL_en").toString();
                         Latitude = data.getString("Latitude").toString();
                         Longitude = data.getString("Longitude").toString();
-                        Route = Route.replaceAll("<br>", "");
-                        Access = Access.replaceAll("<br>", "");
+                        Route = Route.replaceAll("<br>", "\n");
+                        Access = Access.replaceAll("<br>", "\n");
                         Latitude =  Latitude.replaceAll(",", "");
                         Longitude =   Longitude.replaceAll(",", "");
                         Data datas = new Data(title, distinct, Route, Access, MapURL, Latitude, Longitude);
