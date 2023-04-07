@@ -173,14 +173,14 @@ public class DisplayActivity extends AppCompatActivity {
                 String theLongitude  = "";
 
                 if (language == 0){
-                    theLatitude = "緯度 : " + (String) Datalist.get(position).getTitle();
-                    theLongitude = "緯度 : " + (String) Datalist.get(position).getTitle();
+                    theLatitude = "緯度 : " + (String) Datalist.get(position).getLatitude();
+                    theLongitude = "緯度 : " + (String) Datalist.get(position).getLongitude();
                 }else if(language == 1){
-                    theLatitude = "纬度 : " + (String) Datalist.get(position).getTitle();
-                    theLongitude = "经度 : " + (String) Datalist.get(position).getTitle();
+                    theLatitude = "纬度 : " + (String) Datalist.get(position).getLatitude();
+                    theLongitude = "经度 : " + (String) Datalist.get(position).getLongitude();
                 }else{
-                    theLatitude = "Latitude : " + (String) Datalist.get(position).getTitle();
-                    theLongitude = "Longitude : " + (String) Datalist.get(position).getTitle();
+                    theLatitude = "Latitude : " + (String) Datalist.get(position).getLatitude();
+                    theLongitude = "Longitude : " + (String) Datalist.get(position).getLongitude();
                 }
                 String diagmessage = (CharSequence) Datalist.get(position).getTitle() + "\n" + (CharSequence) Datalist.get(position).getDistrict() + "\n" + (CharSequence) Datalist.get(position).getRoute() + "\n" + (CharSequence) Datalist.get(position).getAccessway() + "\n" + theLatitude + "\n" + theLongitude;
                 AlertDialog.Builder builder = new AlertDialog.Builder(DisplayActivity.this);
