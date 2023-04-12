@@ -9,9 +9,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.SearchView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -37,6 +39,7 @@ public class DisplayActivity extends AppCompatActivity {
     private DataListAdapter adapter;
     private ArrayList<Data> Datalist = new ArrayList<>();
     private String title, distinct, Access, MapURL, Latitude, Longitude, Route;
+    private SearchView searchView ;
 
 
     @Override
@@ -54,6 +57,7 @@ public class DisplayActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int language = intent.getIntExtra("language", 0);
         displayInform(language);
+
 
     }
 
@@ -140,7 +144,7 @@ public class DisplayActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-        DataListAdapter adapter = new DataListAdapter(this, R.layout.adapter_view_layout, Datalist);
+        adapter = new DataListAdapter(this, R.layout.adapter_view_layout, Datalist);
         mListView.setAdapter(adapter);
 
         String title ;
@@ -218,6 +222,10 @@ public class DisplayActivity extends AppCompatActivity {
 
             }
         });
+
+
+
+
     }
 
 

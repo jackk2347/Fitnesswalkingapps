@@ -9,7 +9,7 @@ import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
-    private Button lan_1 ,lan_2 ,lan_3;
+    private Button lan_1 ,lan_2 ,lan_3,bmi_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +18,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         lan_1 = findViewById(R.id.lan_1);
         lan_2 = findViewById(R.id.lan_2);
         lan_3 = findViewById(R.id.lan_3);
+        bmi_btn = findViewById(R.id.bmi_btn);
+
 
         lan_1.setOnClickListener(this);
         lan_2.setOnClickListener(this);
         lan_3.setOnClickListener(this);
+        bmi_btn.setOnClickListener(this);
     }
 
 
@@ -44,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra("language",2);
                 startActivity(intent);
                 break ;
+            case R.id.bmi_btn :
+                intent = new Intent(this,DisplaybmiActivity.class);
+                startActivity(intent);
             default:
                 break ;
         }

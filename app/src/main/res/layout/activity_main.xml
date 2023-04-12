@@ -9,7 +9,7 @@
         android:layout_height="75dp"
         android:layout_width="300dp"
         android:text="繁體中文"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="100dp"
         android:layout_marginLeft="50dp"
         android:gravity="center"  />
     <Button
@@ -27,6 +27,15 @@
         android:layout_marginTop="50dp"
         android:layout_marginLeft="50dp"
         android:text="English"
+        android:gravity="center"  />
+
+    <Button
+        android:id="@+id/bmi_btn"
+        android:layout_height="75dp"
+        android:layout_width="300dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="BMI Calculator / BMI 計算"
         android:gravity="center"  />
 
 
